@@ -1,0 +1,195 @@
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, 
+fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, 
+figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline.: 0;                  /* обнуляем отступы и убираем бордюры */
+	vertical-align: baseline;     /* приводим все к одной базовой линии */
+	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+	font-size: 100%;              /* размер шрифта всем одинаковый */
+}
+a {                               /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	outline:none;
+}
+table {						     /* устраняем отступы между ячейками таблицы */
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;		/* возвращаем привычное вертикальное выравнивание */
+} 
+input, select, button, textarea {
+	margin: 0; 				    /* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
+	font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
+	outline: none;
+}
+input[type="text"], input[type="password"], textarea {
+	padding: 0; 				/* убираем внутренние отступы для текстовых полей */
+}
+input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul {
+	 list-style:none;
+}
+/* --------------- /reset.css --------------- */
+
+/* --------------- базовые настройки ---------*/
+html {
+	min-height:100%; 					/* всегда показываем вертикальную полосу прокрутки  */
+}
+body {
+	color: #7e7f84;
+	text-align: left;
+	font-size: 1em; 					/* используем безопасные шрифтовые CSS стеки */
+	font-family: 'Roboto', sans-serif;	/* font-family: 'Roboto Condensed', sans-serif; */
+	min-height:100%;
+}
+a, a:visited { 							/* порядок правил для ссылок имеет значение */
+	color: #f45a40;
+	text-decoration: underline;
+}
+a:hover {
+	color: #f45a40;
+	text-decoration:none;
+}
+a:focus, a:active {
+	color: #f45a40;
+	text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+img{
+
+	max-width:100%;
+}
+.clr{
+	clear:both;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+/* --------------- /базовые настройки ---------*/
+
+.center-block-main {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+header .header-top {
+	padding: 27px 0px;
+	border-bottom: 1px solid #eee;
+}
+header .header-top .logo {
+	float: left;	
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 1.375em;
+	text-transform: uppercase;
+}	
+header .header-top .phone-basket {
+	float: right;
+	font-size: 0.75em;
+	font-weight: bold;
+}
+header .header-top .phone-basket img {
+	vertical-align: middle;
+	padding-right: 7px;
+}
+header .header-top .phone {
+	float: left;
+	padding-right: 27px;
+}
+header .header-top .basket {
+	float: right;
+	padding: 0px 25px 0px 18px;
+	border: 1px solid #eee;
+}
+header .header-top .basket a {
+	padding-left: 25px;
+	color: #7e7f84;
+	text-decoration: none;
+	text-transform: uppercase;
+}	
+header .header-top .basket a:hover {
+	color: #f45a40;
+}	
+header .header-top .phone, header .header-top .basket {
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+header .header-bottom {
+	padding: 10px 0px;
+	font-size: 0.875em;
+}
+header .header-bottom .menu {
+	float: left;
+}
+header .header-bottom .menu li {
+	float: left;
+	margin-right: 35px;
+}
+header .header-bottom .menu li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #7e7f84;
+}
+header .header-bottom .menu li a:hover {
+	color: #f45a40;
+}
+header .header-bottom .search {
+	float: left;
+}
+header .header-bottom .search input[type="image"] {
+	vertical-align: middle;
+	padding-right: 3px;
+}
+header .header-bottom .search input[type="search"] {
+	border: none;
+}
+.slider li {
+	position: relative;
+	color: #f45a40;
+}
+.slider h2 {
+	position: absolute;
+	font-size: 3.6875em;
+	font-weight: bold;
+	line-height: 1.1;
+	top: 210px;
+	left: 35px;
+}
+.slider p {
+	position: absolute;
+	font-size: 0.875em;
+	top: 345px;
+	left: 35px;
+}
+.unslider-nav {
+	max-width: 1170px; 
+	margin: 0 auto;
+	position: relative;
+	top: -40px;
+}
