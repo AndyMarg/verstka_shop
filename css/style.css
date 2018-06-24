@@ -193,3 +193,52 @@ header .header-bottom .search input[type="search"] {
 	position: relative;
 	top: -40px;
 }
+/*==========================*/
+main .block3-articles {
+	margin-bottom: 50px;
+}
+main .block3-articles article {
+	max-width: 31.62%;
+	margin-right: 2.57%;
+	float: left;
+}
+main .block3-articles article:last-child {
+	margin-right: 0;
+}	
+main .block3-articles article h2 {
+	margin: 20px 0;
+}
+main .block3-articles article img {
+	display: block;
+	margin: 0 auto;
+}
+main .block3-articles article a {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 1.375em;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+main .block3-articles article a:hover {
+	text-decoration: underline;
+}
+main .block3-articles article p {
+	font-size: 0.875em;
+}
+/*==========================*/
+main .block4-articles {
+}
+main .block4-articles-header {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 1.375em;
+	text-align: center;
+	margin-bottom: 30px;
+}
+main .block4-articles article {
+	max-width: 23.077%;
+	margin-right: 2.564%;
+	float: left;
+}
+main .block4-articles article:last-child {
+	margin-right: 0;
+}	
+
