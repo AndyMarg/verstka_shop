@@ -226,6 +226,7 @@ main .block3-articles article p {
 }
 /*==========================*/
 main .block4-articles {
+	margin-bottom: 60px;
 }
 main .block4-articles-header {
 	font-family: 'Roboto Condensed', sans-serif;
@@ -234,11 +235,126 @@ main .block4-articles-header {
 	margin-bottom: 30px;
 }
 main .block4-articles article {
-	max-width: 23.077%;
-	margin-right: 2.564%;
+	max-width: 23.07%;
+	margin-right: 2.5%;
 	float: left;
 }
 main .block4-articles article:last-child {
 	margin-right: 0;
 }	
+main .block4-articles .tovar-info {
+	padding: 20px 20px 0px 20px;
+	border: 1px solid #eee;
+	border-top: none;
+	margin-top: -5px;
+}
+main .block4-articles .tovar-info .descript {
+	padding-bottom: 5px;
+}
+main .block4-articles .tovar-info h2 {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 1.25em;
+	color: #67686d;
+	margin-bottom: 5px;
+	text-decoration: uppercase;
+}
+main .block4-articles .tovar-info h3 {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 0.875em;
+	font-style: italic;
+	margin-bottom: 10px;
+	text-decoration: uppercase;
+}
+main .block4-articles .tovar-info p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.625em;
+	line-height: 1.2;
+	margin-bottom: 15px;
+}
+main .block4-articles .tovar-info .summa {
+	padding-top: 15px;;
+	border-top: 1px solid #eee;
+}	
+main .block4-articles .tovar-info .summa p {
+	float: left;
+	color: #f45a40;
+	font-size: 0.875em;
+}	
+main .block4-articles .tovar-info .summa img {
+	float: right;
+}	
+/*==========================*/
+.about {
+	margin-bottom: 60px;
+}
+.about article {
+	width: 60%;
+	float:left;
+}
+.about article h2 {
+	font-size: 1.325em;
+	font-weight: bold;
+	color: #67686d;
+	margin-bottom: 30px;
+}
+.about article p {
+	font-size: 0.875em;
+	font-style: italic;
+	margin-bottom: 25px;
+}
+.about .map {
+	width: 35%;
+	float:right;
+}
+
+.about .map-in {
+	position: relative;
+	padding-bottom: 75%; /* 450/600 */
+	height: 0;
+	overflow: hidden;
+}
+.maping iframe {
+	position: absolute; 
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/*==========================*/
+.sign-up {
+	background: #f45a40;
+	color: #fff;
+	padding: 30px 0;
+}
+.sign-up h2 {
+	float: left;
+	font-size: 1.325em;
+	margin-top: 5px;
+	text-transform: uppercase;
+}
+.sign-up-request {
+	float: right;
+}
+.sign-up-request input[type="email"] {
+	float: left;
+	width: 200px;
+	font-size: 0.875em;
+	padding: 7px 20px;
+	border: none;
+	text-transform: uppercase;
+}
+.sign-up-request input[type="submit"] {
+	float: left;
+	background: #ff674f;
+	color: #fff;
+	font-size: 0.875em;
+	padding: 7px 20px;
+	margin-left: 20px;
+	border: none;
+	cursor: pointer;
+	text-transform: uppercase;
+}	
+
+
+
 
