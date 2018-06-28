@@ -198,7 +198,7 @@ main .block3-articles {
 	margin-bottom: 50px;
 }
 main .block3-articles article {
-	max-width: 31.62%;
+	width: 31.62%;
 	margin-right: 2.57%;
 	float: left;
 }
@@ -459,4 +459,42 @@ footer article .support a:hover {
 		display: table;
 		margin: 0 auto;
 	}
+}
+
+@media screen and (max-width: 780px) {
+
+    .slider h2 {
+        font-size: 2em;
+        top: 100px;
+    }
+    .slider p {
+        font-size: 0.8em;
+        top: 180px;
+    }
+    header .header-bottom .search {
+        float: right;
+        margin-top: 10px;
+        padding: 5px 0 7px 0;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    main .block3-articles article {
+        float: none;
+        width: 95%;
+        margin: 0 2.5% 30px 2.5%;
+    }
+    .about article, .about .map {
+        width: 95%;
+        margin: 0 2.5%;
+        float:none;
+    }
+
+    main .block4-articles {
+        margin-bottom: 30px;
+    }
+
 }
