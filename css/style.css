@@ -235,7 +235,7 @@ main .block4-articles-header {
 	margin-bottom: 30px;
 }
 main .block4-articles article {
-	max-width: 23.07%;
+	width: 23.07%;
 	margin-right: 2.5%;
 	float: left;
 }
@@ -431,3 +431,32 @@ footer article .support a:hover {
 		text-decoration: underline;
 }
 
+@media screen and (max-width: 900px) {
+
+	.slider h2 {
+		font-size: 3em;
+		top: 150px;
+	}
+	.slider p {
+		font-size: 0.8em;
+		top: 260px;
+	}
+	main .block4-articles article {
+		width: 45%;
+		margin: 0 2.5% 30px 2.5%;
+		float: left;
+	}
+	main .block4-articles article .block4-img {
+		width: 100%;
+	}
+	.sign-up h2 {
+		float: none;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.sign-up-request {
+		float: none;
+		display: table;
+		margin: 0 auto;
+	}
+}

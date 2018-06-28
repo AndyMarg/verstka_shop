@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Internet Shop</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
 	<link rel="stylesheet" href="css/unslider.css">
 	<link rel="stylesheet" href="css/unslider-dots.css">
@@ -94,7 +95,7 @@
 		<div class="block4-articles clearfix">
 			<div class="block4-articles-header">POPULAR PRODUCTS</div>
 			<article>
-				<img src="images/img41.jpg" alt="">
+				<img class="block4-img" src="images/img41.jpg" alt="">
 				<div class="tovar-info">
 					<div class="descript">
 						<h2>NIKE TAILWIND LOOSE</h2>
@@ -108,7 +109,7 @@
 				</div>			
 			</article>
 			<article>
-				<img src="images/img42.jpg" alt="">
+				<img class="block4-img" src="images/img42.jpg" alt="">
 				<div class="tovar-info">
 					<div class="descript">
 						<h2>NIKE G87</h2>
@@ -123,7 +124,7 @@
 				</div>			
 			</article>
 			<article>
-				<img src="images/img43.jpg" alt="">
+				<img class="block4-img" src="images/img43.jpg" alt="">
 				<div class="tovar-info">
 					<div class="descript">
 						<h2>NIKE I-BEAM SWOOSH</h2>
@@ -137,7 +138,7 @@
 				</div>			
 			</article>
 			<article>
-				<img src="images/img44.jpg" alt="">
+				<img class="block4-img" src="images/img44.jpg" alt="">
 				<div class="tovar-info">
 					<div class="descript">
 						<h2>NIKE LUX</h2>
@@ -246,8 +247,8 @@
 
 	function setEqualHeight(columns) { 
 		let tallestcolumn = 0;
-		columns.each( function() { 
-			currentHeight = $(this).height(); 
+		columns.each( function() {
+            let currentHeight = $(this).height();
 			if(currentHeight > tallestcolumn) { tallestcolumn = currentHeight; } } ); 
 			columns.height(tallestcolumn); 
 		} 
