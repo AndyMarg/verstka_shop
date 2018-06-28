@@ -5,7 +5,7 @@ figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, 
 	margin: 0;
 	padding: 0;
 	border: 0;
-	outline.: 0;                  /* обнуляем отступы и убираем бордюры */
+	outline: 0;                  /* обнуляем отступы и убираем бордюры */
 	vertical-align: baseline;     /* приводим все к одной базовой линии */
 	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
 	font-size: 100%;              /* размер шрифта всем одинаковый */
@@ -353,8 +353,16 @@ main .block4-articles .tovar-info .summa img {
 	border: none;
 	cursor: pointer;
 	text-transform: uppercase;
-}	
-
-
+}
+/*==========================*/
+footer .block4-articles article {
+	max-width: 23.07%;
+	margin-right: 2.5%;
+	float: left;
+	/*border: 1px solid red;*/
+}
+footer .block4-articles article:last-child {
+	margin-right: 0;
+}
 
 
