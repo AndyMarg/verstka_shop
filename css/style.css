@@ -100,7 +100,7 @@ img{
 	margin: 0 auto;
 }
 header .header-top {
-	padding: 27px 0px;
+	padding: 27px 0;
 	border-bottom: 1px solid #eee;
 }
 header .header-top .logo {
@@ -124,7 +124,7 @@ header .header-top .phone {
 }
 header .header-top .basket {
 	float: right;
-	padding: 0px 25px 0px 18px;
+	padding: 0 25px 0 18px;
 	border: 1px solid #eee;
 }
 header .header-top .basket a {
@@ -141,7 +141,7 @@ header .header-top .phone, header .header-top .basket {
 	padding-bottom: 8px;
 }
 header .header-bottom {
-	padding: 10px 0px;
+	padding: 10px 0;
 	font-size: 0.875em;
 }
 header .header-bottom .menu {
@@ -243,7 +243,7 @@ main .block4-articles article:last-child {
 	margin-right: 0;
 }	
 main .block4-articles .tovar-info {
-	padding: 20px 20px 0px 20px;
+	padding: 20px 20px 0 20px;
 	border: 1px solid #eee;
 	border-top: none;
 	margin-top: -5px;
@@ -256,14 +256,14 @@ main .block4-articles .tovar-info h2 {
 	font-size: 1.25em;
 	color: #67686d;
 	margin-bottom: 5px;
-	text-decoration: uppercase;
+	text-transform: uppercase;
 }
 main .block4-articles .tovar-info h3 {
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 0.875em;
 	font-style: italic;
 	margin-bottom: 10px;
-	text-decoration: uppercase;
+	text-transform: uppercase;
 }
 main .block4-articles .tovar-info p {
 	font-family: 'Roboto', sans-serif;
@@ -355,14 +355,79 @@ main .block4-articles .tovar-info .summa img {
 	text-transform: uppercase;
 }
 /*==========================*/
+footer {
+	padding: 40px 0;
+	background: #2a2d34;
+}
+footer h2 {
+	text-transform: uppercase;
+	color: #fff;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 1.325em;
+	margin-bottom: 10px;
+}
+footer p {
+	font-size: 0.875em;
+	margin-bottom: 20px;
+}
+footer h3 {
+	font-size: 0.875em;
+	margin-bottom: 5px;
+}
+footer h3 a {
+	text-decoration: none;
+	color: #fff;
+}
+footer h3 a:hover {
+	text-decoration: underline;
+	color: #fff;
+}
 footer .block4-articles article {
-	max-width: 23.07%;
+	width: 23.07%;
 	margin-right: 2.5%;
 	float: left;
-	/*border: 1px solid red;*/
 }
-footer .block4-articles article:last-child {
+footer article:last-child {
 	margin-right: 0;
 }
-
+footer article .support {
+	float: left;
+	width: 47%;
+	margin-right: 3%;
+}
+footer article .support a {
+	display: block;
+	color: #737884;
+	text-decoration: none;
+	margin-bottom: 5px;
+}
+footer article .footer-email {
+	width: 100%;
+	font-size: 0.75em;
+	padding: 7px 20px;
+	margin-bottom: 15px;
+	border: none;
+	box-sizing: border-box;
+	text-transform: uppercase;
+}
+footer article .footer-text {
+	width: 100%;
+	padding: 7px 20px;
+	margin-bottom: 15px;
+	border: none;
+	box-sizing: border-box;
+	text-transform: uppercase;
+}
+footer article .submit {
+	font-size: 0.875em;
+	padding: 7px 20px;
+	border: none;
+	background: #f45a40;
+	color: #fff;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+footer article .support a:hover {
+		text-decoration: underline;
+}
 

@@ -39,7 +39,7 @@
 				</ul>
 			</nav>
 			<div class="search">
-				<form action="" method="get">
+				<form>
 					<input type="image" src="images/search-btn.jpg">
 					<input type="search" placeholder="Search...">
 				</form>
@@ -173,7 +173,7 @@
 		<div class="center-block-main clearfix">
 			<h2><strong>SIGN UP</strong> FOR EXCLUSIVE SALES AND PRODUCT NEWS</h2>
 			<div class="sign-up-request">
-				<form action="" method="get">
+				<form>
 					<input type="email" class="email" placeholder="EONY321V@GMAIL.COM">		
 					<input type="submit" class="submit" value="SIGN UP">		
 				</form>
@@ -203,7 +203,7 @@
                 <h2>Support</h2>
                 <div class="footer-article-content">
                     <p class="support">
-                        <a href="#">Terms & Conditions</a>
+                        <a href="#">Terms &amp; Conditions</a>
                         <a href="#">FAQ</a>
                         <a href="#">Payment</a>
                         <a href="#">Refunds</a>
@@ -211,7 +211,7 @@
                     </p>
                     <p class="support">
                         <a href="#">Services</a>
-                        <a href="#">Privacy & Security</a>
+                        <a href="#">Privacy &amp; Security</a>
                         <a href="#">Careers</a>
                         <a href="#">Press</a>
                     </p>
@@ -245,7 +245,7 @@
 	});
 
 	function setEqualHeight(columns) { 
-		var tallestcolumn = 0; 
+		let tallestcolumn = 0;
 		columns.each( function() { 
 			currentHeight = $(this).height(); 
 			if(currentHeight > tallestcolumn) { tallestcolumn = currentHeight; } } ); 
