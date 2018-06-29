@@ -447,7 +447,9 @@ footer article .support a:hover {
 		float: left;
 	}
 	main .block4-articles article .block4-img {
-		width: 100%;
+		width: auto;
+		display: block;
+		margin: 0 auto;
 	}
 	.sign-up h2 {
 		float: none;
@@ -492,9 +494,85 @@ footer article .support a:hover {
         margin: 0 2.5%;
         float:none;
     }
-
     main .block4-articles {
         margin-bottom: 30px;
     }
+	footer .block4-articles article {
+		width: 47.5%;
+		margin-right: 2.5%;
+		float: left;
+	}
+	footer article:last-child {
+		margin-right: 0;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+
+	.slider h2 {
+		font-size: 1.2em;
+		top: 50px;
+		left: 20px;
+	}
+	.slider p {
+		font-size: 0.675em;
+		top: 100px;
+		left: 20px;
+	}
+	main .block4-articles article {
+		width: 95%;
+		margin: 0 2.5% 30px 2.5%;
+		float: none;
+	}
+	main .block4-articles article .block4-img {
+		width: auto;
+		display: block;
+		margin: 0 auto;
+	}
+	footer .block4-articles article {
+		width: 95%;
+		margin: 0 2.5% 10px 2.5%;
+		float: none;
+		overflow: hidden;
+	}
+
+}
+
+@media screen and (max-width: 410px) {
+
+	header .header-top {
+		padding-top: 10px;
+	}
+	header .header-top .logo {
+		float: none;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	header .header-top .phone-basket {
+		float: none;
+		margin: 0 10px;
+	}
+
+}
+
+@media screen and (max-width: 360px) {
+
+	.sign-up-request input[type="email"] {
+		float: none;
+		width: 95%;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		margin: 0 2.5% 10px 2.5%;
+	}
+	.sign-up-request input[type="submit"] {
+		float: none;
+		width: 50%;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		margin: 0 25%;
+	}
 
 }
